@@ -5,7 +5,7 @@ description: Resolve an authorized Wefunder syndicate and read its members, deal
 
 # Syndicate manager reporting
 
-Explicit user instructions win over skill guidance. Follow the user's scope and format while preserving server authorization and factual, privacy, and read-only boundaries. The server owns data, auth, and tool schemas; this skill orchestrates read workflows.
+Explicit user instructions win over skill guidance. Follow the user's scope and format while preserving server authorization and factual, privacy, and no-money boundaries. The server owns data, auth, and tool schemas; this skill orchestrates read workflows.
 
 ## Procedure
 
