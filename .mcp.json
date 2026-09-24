@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wefunder": {
+      "type": "streamable-http",
+      "url": "https://wefunder.com/mcp/server"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "wefunder",
+  "version": "0.1.0-beta",
+  "description": "Browse Wefunder offerings and read authorized company and syndicate information.",
+  "author": {
+    "name": "Wefunder Inc.",
+    "url": "https://wefunder.com"
+  },
+  "homepage": "https://wefunder.com/mcp/README.md",
+  "repository": "https://github.com/Wefunder/agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "wefunder",
+    "community-round",
+    "offerings",
+    "founders",
+    "syndicates"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Wefunder (Beta)",
+    "shortDescription": "Home of the Community Round",
+    "longDescription": "Browse the startups raising on Wefunder that you can see, read a company's page and round terms as data, and, if you run a company or syndicate on Wefunder, read your investor and member data. Read-only: this connection can never invest, reserve, or change anything on your account. Wefunder does not give investment advice or recommendations.",
+    "developerName": "Wefunder Inc.",
+    "category": "Finance",
+    "capabilities": [
+      "Read",
+      "Interactive"
+    ],
+    "websiteURL": "https://wefunder.com",
+    "privacyPolicyURL": "https://wefunder.com/terms#privacy",
+    "termsOfServiceURL": "https://wefunder.com/terms",
+    "defaultPrompt": [
+      "Show Wefunder offerings with a minimum of $500 or less.",
+      "Summarize my company's fundraising dashboard.",
+      "Show my syndicate's deals and recent activity."
+    ],
+    "brandColor": "#2E58FF",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}

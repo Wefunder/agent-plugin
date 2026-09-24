@@ -1,0 +1,20 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  manifests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JSON is valid
+        run: |
+          for f in plugin.json mcp.json .mcp.json .codex-plugin/plugin.json .claude-plugin/plugin.json .claude-plugin/marketplace.json .agents/plugins/marketplace.json; do
+            python3 -m json.tool "$f" > /dev/null && echo "ok $f"
+          done
+      - name: Generated manifests are in sync with plugin.json / mcp.json
+        run: python3 bin/build-manifests --check
+      - name: Every skill has frontmatter with name and description
+        run: |
+          for f in skills/*/SKILL.md; do
+            head -1 "$f" | grep -q '^---$' || { echo "missing frontmatter: $f"; exit 1; }
+            grep -q '^name:' "$f" && grep -q '^description:' "$f" || { echo "missing name/description: $f"; exit 1; }
+          done
