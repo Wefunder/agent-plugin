@@ -1,6 +1,6 @@
 {
   "name": "wefunder",
-  "version": "0.1.0-beta",
+  "version": "1.0.0",
   "description": "Browse Wefunder offerings and read authorized company and syndicate information.",
   "author": {
     "name": "Wefunder Inc.",
@@ -16,7 +16,7 @@
     "founders",
     "syndicates"
   ],
-  "displayName": "Wefunder (Beta)",
+  "displayName": "Wefunder",
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }

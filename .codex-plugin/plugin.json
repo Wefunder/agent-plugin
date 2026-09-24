@@ -1,6 +1,6 @@
 {
   "name": "wefunder",
-  "version": "0.1.0-beta",
+  "version": "1.0.0",
   "description": "Browse Wefunder offerings and read authorized company and syndicate information.",
   "author": {
     "name": "Wefunder Inc.",
@@ -18,7 +18,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Wefunder (Beta)",
+    "displayName": "Wefunder",
     "shortDescription": "Home of the Community Round",
     "longDescription": "Browse the startups raising on Wefunder that you can see, read a company's page and round terms as data, and, if you run a company or syndicate on Wefunder, read your investor and member data. Read-only: this connection can never invest, reserve, or change anything on your account. Wefunder does not give investment advice or recommendations.",
     "developerName": "Wefunder Inc.",

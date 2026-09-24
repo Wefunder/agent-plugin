@@ -4,7 +4,7 @@ Connect your AI assistant to [Wefunder](https://wefunder.com), the home of the C
 
 It is **read-only**. A connected agent can never invest, reserve, or change anything on your account. Wefunder does not give investment advice, and neither will your agent: it reports what Wefunder shows, with links back to the source.
 
-**Status: beta.** The server is live at `https://wefunder.com/mcp/server`; this package is how the major agents install it. Feedback and issues welcome here.
+The server is live at `https://wefunder.com/mcp/server`; this package is how the major agents install it. Feedback and issues welcome here.
 
 ## What's in this repo
 
