@@ -1,0 +1,22 @@
+{
+  "name": "wefunder",
+  "version": "1.0.0",
+  "description": "Browse Wefunder offerings and read authorized company and syndicate information.",
+  "author": {
+    "name": "Wefunder Inc.",
+    "url": "https://wefunder.com"
+  },
+  "homepage": "https://wefunder.com/mcp/README.md",
+  "repository": "https://github.com/Wefunder/agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "wefunder",
+    "community-round",
+    "offerings",
+    "founders",
+    "syndicates"
+  ],
+  "logo": "assets/logo.png",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

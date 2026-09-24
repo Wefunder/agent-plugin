@@ -6,6 +6,7 @@ extensions["com.openai"]) and mcp.json. Generated here so they never drift:
 
   .codex-plugin/plugin.json   Codex CLI / ChatGPT desktop (interface at top level)
   .claude-plugin/plugin.json  Claude Code
+  .cursor-plugin/plugin.json  Cursor / Grok Bot marketplace (logo + MCP path)
   .mcp.json                   Codex, Claude Code, Grok Build, Cursor (mcpServers only)
 
 Run after editing plugin.json or mcp.json:  python3 bin/build-manifests
@@ -21,9 +22,13 @@ mcp = json.loads((root / "mcp.json").read_text())
 iface = plugin["extensions"]["com.openai"]["interface"]
 common = {k: plugin[k] for k in ("name", "version", "description", "author", "homepage", "repository", "license", "keywords") if k in plugin}
 
+# Cursor marketplace logo: relative path without "./" (matches Cursor reference examples).
+logo = iface.get("logo", "./assets/logo.png").lstrip("./")
+
 outputs = {
     root / ".codex-plugin" / "plugin.json": {**common, "skills": "./skills/", "interface": iface},
     root / ".claude-plugin" / "plugin.json": {**common, "displayName": iface["displayName"], "skills": "./skills/", "mcpServers": "./.mcp.json"},
+    root / ".cursor-plugin" / "plugin.json": {**common, "logo": logo, "skills": "./skills/", "mcpServers": "./.mcp.json"},
     root / ".mcp.json": {"mcpServers": mcp["mcpServers"]},
 }
 
