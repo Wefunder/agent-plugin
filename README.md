@@ -13,6 +13,7 @@ The server is live at `https://wefunder.com/mcp/server`; this package is how the
 | `plugin.json`, `mcp.json` | The portable plugin manifest ([Agent Plugins](https://agent-plugins.org) schema) with OpenAI listing metadata. Source of truth. |
 | `.codex-plugin/plugin.json`, `.mcp.json` | Codex CLI and ChatGPT desktop (generated) |
 | `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` | Claude Code plugin + marketplace (generated manifest) |
+| `.cursor-plugin/plugin.json` | Cursor / Grok Bot marketplace listing (generated; includes logo) |
 | `.agents/plugins/marketplace.json` | Codex / ChatGPT marketplace index pointing at this repo root |
 | `skills/` | Three skills that teach an agent how to use the tools well: `browse-deals`, `founder-investor-insights`, `syndicate-manager` |
 | `assets/` | Logo and icon for directory listings |
@@ -53,19 +54,25 @@ Then `/mcp` inside Claude Code to sign in. Server only, without the skills: `cla
 
 Customize → Connectors → **+** → **Add custom connector** → paste `https://wefunder.com/mcp/server` → Add → Connect. Remote servers are not configured in `claude_desktop_config.json`.
 
-### Grok
+### Cursor and Grok Bot
 
-grok.com → Connectors → **New Connector** → **Custom** → paste `https://wefunder.com/mcp/server` and complete sign-in. For Grok Build and Grok Bot, this repo is packaged for the [xAI plugin marketplace](https://github.com/xai-org/plugin-marketplace); a catalog entry is in progress.
+Grok Bot installs connectors from the [Cursor Marketplace](https://cursor.com/marketplace). Once Wefunder is listed there, install **Wefunder** from the marketplace in Cursor or Grok Bot, then complete the Wefunder sign-in when prompted.
 
-### Cursor
+Until the listing is live, either:
 
-Add to `~/.cursor/mcp.json` (all projects) or `.cursor/mcp.json` (one project):
+- **Plugin (skills included):** copy this repo to `~/.cursor/plugins/local/wefunder`, reload Cursor, and confirm skills + the Wefunder MCP server appear under Customize. Or submit the public repo at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish) for review.
+- **Server only:** add to `~/.cursor/mcp.json` (all projects) or `.cursor/mcp.json` (one project):
 
 ```json
 { "mcpServers": { "wefunder": { "url": "https://wefunder.com/mcp/server" } } }
 ```
 
 Then sign in when Cursor prompts.
+
+### Grok (grok.com) and Grok Build
+
+- **grok.com connectors:** Connectors → **New Connector** → **Custom** → paste `https://wefunder.com/mcp/server` and complete sign-in.
+- **Grok Build:** this repo is packaged for the [xAI plugin marketplace](https://github.com/xai-org/plugin-marketplace). After the catalog entry merges, install **wefunder** from that marketplace.
 
 ### Anything else that speaks MCP
 
