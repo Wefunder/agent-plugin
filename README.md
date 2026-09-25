@@ -2,7 +2,7 @@
 
 Connect your AI assistant to [Wefunder](https://wefunder.com), the home of the Community Round, and let it browse the startups you can invest in, look up companies and their rounds, and, if you run a syndicate or company on Wefunder, read your investor and member data.
 
-It is **read by default**. A connected agent can never invest, reserve, or move money. With permissions you grant explicitly on the sign-in page, it can do two small things on your behalf: follow or unfollow companies, and draft a question or comment that you approve on wefunder.com before anything is posted. Wefunder does not give investment advice, and neither will your agent: it reports what Wefunder shows, with links back to the source.
+It is **read by default**. A connected agent can never invest, reserve, or move money. With a permission you grant explicitly on the sign-in page, it can do one small thing on your behalf: follow or unfollow companies. Wefunder does not give investment advice, and neither will your agent: it reports what Wefunder shows, with links back to the source.
 
 The server is live at `https://wefunder.com/mcp/server`; this package is how the major agents install it. Feedback and issues welcome here.
 
@@ -22,7 +22,7 @@ Edit `plugin.json` or `mcp.json`, then run `python3 bin/build-manifests`; CI fai
 
 ## Install
 
-Every route ends on the same Wefunder sign-in page where you choose permissions. The only required one is **Browse Wefunder as you**, which is read-only; the optional checkboxes are **View your investments and portfolio**, **Follow companies for you**, and **Draft comments for you**. You can turn them on later or take them away at [wefunder.com/settings/apps](https://wefunder.com/settings/apps). Manage or disconnect any time at [wefunder.com/settings/apps](https://wefunder.com/settings/apps).
+Every route ends on the same Wefunder sign-in page where you choose permissions. The only required one is **Browse Wefunder as you**, which is read-only; the one optional checkbox today is **Follow companies for you**. You can turn them on later or take them away at [wefunder.com/settings/apps](https://wefunder.com/settings/apps). Manage or disconnect any time at [wefunder.com/settings/apps](https://wefunder.com/settings/apps).
 
 ### ChatGPT
 
@@ -86,7 +86,7 @@ For founders and team members: fundraising dashboard totals, round history, inve
 
 For syndicate managers: syndicates, members, member investments, deals, deal investors, and recent activity.
 
-With the optional permissions: list, follow, and unfollow the companies you follow; and draft a question or answer on a company's page as a proposal you approve on wefunder.com, which is the only way anything gets posted.
+With the optional permission: list, follow, and unfollow the companies you follow.
 
 Authorization is enforced by the Wefunder server on every call, exactly as it is for any API client; a prompt cannot talk its way past a 403.
 

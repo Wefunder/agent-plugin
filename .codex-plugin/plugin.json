@@ -1,7 +1,7 @@
 {
   "name": "wefunder",
   "version": "1.0.0",
-  "description": "Browse Wefunder offerings and read authorized company and syndicate information; optionally follow companies and draft comments for your approval.",
+  "description": "Browse Wefunder offerings and read authorized company and syndicate information; optionally follow companies for you.",
   "author": {
     "name": "Wefunder Inc.",
     "url": "https://wefunder.com"
@@ -19,8 +19,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Wefunder",
-    "shortDescription": "Home of the Community Round",
-    "longDescription": "Browse the startups raising on Wefunder that you can see, read a company's page and round terms as data, and, if you run a company or syndicate on Wefunder, read your investor and member data. Read by default: this connection can never invest, reserve, or move money. With permissions you grant explicitly it can follow companies for you and draft comments that you approve on wefunder.com before they post. Wefunder does not give investment advice or recommendations.",
+    "shortDescription": "Investor and startup tools",
+    "longDescription": "Browse the startups raising on Wefunder that you can see, read a company's page and round terms as data, and, if you run a company or syndicate on Wefunder, read your investor and member data. Read by default: this connection can never invest, reserve, or move money. With permissions you grant explicitly it can follow companies for you. Wefunder does not give investment advice or recommendations.",
     "developerName": "Wefunder Inc.",
     "category": "Finance",
     "capabilities": [

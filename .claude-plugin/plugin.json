@@ -1,7 +1,7 @@
 {
   "name": "wefunder",
   "version": "1.0.0",
-  "description": "Browse Wefunder offerings and read authorized company and syndicate information; optionally follow companies and draft comments for your approval.",
+  "description": "Browse Wefunder offerings and read authorized company and syndicate information; optionally follow companies for you.",
   "author": {
     "name": "Wefunder Inc.",
     "url": "https://wefunder.com"
