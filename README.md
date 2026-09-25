@@ -15,7 +15,7 @@ The server is live at `https://wefunder.com/mcp/server`; this package is how the
 | `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` | Claude Code plugin + marketplace (generated manifest) |
 | `.cursor-plugin/plugin.json` | Cursor / Grok Bot marketplace listing (generated; includes logo) |
 | `.agents/plugins/marketplace.json` | Codex / ChatGPT marketplace index pointing at this repo root |
-| `skills/` | Three skills that teach an agent how to use the tools well: `browse-deals`, `founder-investor-insights`, `syndicate-manager` |
+| `skills/` | Four skills that teach an agent how to use the tools well: `browse-deals`, `company-research-and-watchlist`, `founder-investor-insights`, `syndicate-manager` |
 | `assets/` | Logo and icon for directory listings |
 
 Edit `plugin.json` or `mcp.json`, then run `python3 bin/build-manifests`; CI fails if the generated copies are stale.

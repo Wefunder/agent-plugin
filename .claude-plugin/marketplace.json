@@ -10,7 +10,7 @@
       "name": "wefunder",
       "source": "./",
       "description": "Browse startups raising on Wefunder, look up companies and rounds, and read your own syndicate or company data. Read-only.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Wefunder Inc."
       },
