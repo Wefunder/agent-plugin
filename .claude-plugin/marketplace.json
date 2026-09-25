@@ -1,5 +1,6 @@
 {
   "name": "wefunder",
+  "description": "Wefunder's plugin for AI agents: browse startups raising on Wefunder, read company and round data, and (for founders and syndicate managers) your own investor and member data.",
   "owner": {
     "name": "Wefunder Inc.",
     "url": "https://wefunder.com"
