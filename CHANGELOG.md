@@ -12,10 +12,10 @@ when they deploy, whatever version a directory shows.
 Built against server **0.4.0**.
 
 - New permission on the sign-in page, unchecked until you tick it: **Read your
-  investments**. (**Follow companies for you** stays preselected on first
-  connection, as before; clear it for browse-only access.) With it the agent can list your own portfolio
+  investments**. With it the agent can list your own portfolio
   (`list_my_investments`): one position per offering, with status, cost and
-  current value as Wefunder records them.
+  current value as Wefunder records them. **Follow companies for you** stays
+  preselected on first connection, as before; clear it for browse-only access.
 - The people tools (`list_members`, `list_deal_investors`,
   `list_company_investors`, `search_company_investors`) never return contact or
   identity details any more; there is no longer a switch to ask for them. The
