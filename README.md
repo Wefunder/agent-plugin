@@ -22,7 +22,7 @@ Edit `plugin.json` or `mcp.json`, then run `python3 bin/build-manifests`; CI fai
 
 ## Install
 
-Every route ends on the same Wefunder sign-in page where you choose permissions. The only required one is **Browse Wefunder as you**, which is read-only. Two optional checkboxes, both off until you tick them: **Follow companies for you** and **Read your investments** (your own portfolio). You can turn them on later or take them away at [wefunder.com/settings/apps](https://wefunder.com/settings/apps), and disconnect there any time.
+Every route ends on the same Wefunder sign-in page where you choose permissions. The only required one is **Browse Wefunder as you**, which is read-only. Two more are optional. **Follow companies for you** is selected when you first connect, so clear it if you want browse-only access (it is preselected because ChatGPT asks again, every session, for any permission you left unticked the first time). **Read your investments** (your own portfolio) starts unchecked. A reconnect or a permission prompt from the agent can also arrive with boxes preselected to match what the connection already holds or just asked for. You can turn permissions on later or take them away at [wefunder.com/settings/apps](https://wefunder.com/settings/apps), and disconnect there any time.
 
 ### ChatGPT
 
