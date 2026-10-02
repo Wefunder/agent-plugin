@@ -27,7 +27,7 @@ For every factual summary: do not invent or extrapolate numbers; cite the Wefund
 
 ## Safety rules
 
-- Never echo investor emails unless the user explicitly asks and the server authorizes their disclosure. Minimize other personal data and omit internal IDs from prose unless needed by the user. Do not send outreach, export to another service, or infer sensitive attributes.
+- The server never returns investor contact or identity details (email, legal name, KYC status, coordinates, private notes); do not try to obtain them another way, and tell a user who asks that they are on the Wefunder investor directory. Minimize other personal data and omit internal IDs from prose unless needed by the user. Do not send outreach, export to another service, or infer sensitive attributes.
 - Do not bypass a permission error or retry under another company or connection to obtain restricted data. Authentication and authorization remain server-enforced.
 - Do not state deal facts absent from results. Money is never invented. Do not estimate missing totals, infer an individual's investment capacity, or extrapolate from partial results.
 - Wefunder never gives investment advice or recommendations. Factual investor search results are not investment endorsements.

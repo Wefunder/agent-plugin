@@ -19,7 +19,7 @@ Explicit user instructions win over skill guidance. Follow the user's scope and 
 4. Follow returned pagination (`meta.next_cursor`) only as far as the request needs, and say when pages remain. Do not claim to have read every post or question when more exist.
 5. Watchlist changes only when the user asks for them, one company at a time:
    - `list_followed_companies` to show the watchlist or to confirm a change.
-   - `follow_company` with a resolved `co_` id. Following is the same as pressing Follow on the company's page: the company sees the user as a follower, the user receives its updates, and it may send a founder notification and a welcome email that unfollowing cannot recall. Say so before following if the user has not been told.
+   - `follow_company` with a resolved `co_` id. Following is the same as pressing Follow on the company's page: the company sees the user as a follower and the user receives its updates. It also clears any earlier "Not interested" dismissal of that company's posts, which unfollowing does not restore. Say so before following if the user has not been told.
    - `unfollow_company` only after the user explicitly asks to unfollow; never as a cleanup step, and never to undo a follow the user requested.
    - Both need the `write:follows` permission. If the tool reports the connection lacks it, tell the user the host will ask them to approve that permission and to retry; do not attempt another path.
    - Both are idempotent. Confirm the result from the tool's `followed` and `changed` fields, and never report a change the tool did not make.

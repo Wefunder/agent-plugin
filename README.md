@@ -22,13 +22,12 @@ Edit `plugin.json` or `mcp.json`, then run `python3 bin/build-manifests`; CI fai
 
 ## Install
 
-Every route ends on the same Wefunder sign-in page where you choose permissions. The only required one is **Browse Wefunder as you**, which is read-only; the one optional checkbox today is **Follow companies for you**. You can turn them on later or take them away at [wefunder.com/settings/apps](https://wefunder.com/settings/apps). Manage or disconnect any time at [wefunder.com/settings/apps](https://wefunder.com/settings/apps).
+Every route ends on the same Wefunder sign-in page where you choose permissions. The only required one is **Browse Wefunder as you**, which is read-only. Two optional checkboxes, both off until you tick them: **Follow companies for you** and **Read your investments** (your own portfolio). You can turn them on later or take them away at [wefunder.com/settings/apps](https://wefunder.com/settings/apps), and disconnect there any time.
 
 ### ChatGPT
 
-*Wefunder is not yet in the ChatGPT plugin directory. Until then:*
-
-- **Whole plugin (skills included):** Plugins → **+** → **Upload plugin** and upload a ZIP of this repo. Or, in a Business/Enterprise workspace, Admin → Plugins → Add → **Import marketplace** with source `Wefunder/agent-plugin`.
+- **From the directory:** open [wefunder.com/mcp/chatgpt/install](https://wefunder.com/mcp/chatgpt/install), which takes you to the approved Wefunder listing, and add it.
+- **Whole plugin from source (skills included):** Plugins → **+** → **Upload plugin** and upload a ZIP of this repo. Or, in a Business/Enterprise workspace, Admin → Plugins → Add → **Import marketplace** with source `Wefunder/agent-plugin`.
 - **Server only:** Settings → Plugins → Developer Mode → on. Plugins → **+** → **Create app** → **Create MCP app**, server URL `https://wefunder.com/mcp/server`, authentication OAuth.
 
 Leaving an optional permission unchecked makes ChatGPT show an orange "not all permissions were granted" warning. That is expected. Reinstalling does not re-authorize; delete the plugin and add it again to start over.
