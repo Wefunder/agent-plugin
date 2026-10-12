@@ -1,6 +1,6 @@
 {
   "name": "wefunder",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Browse Wefunder offerings and read authorized company and syndicate information; optionally follow companies for you.",
   "author": {
     "name": "Wefunder Inc.",
@@ -20,7 +20,7 @@
   "interface": {
     "displayName": "Wefunder",
     "shortDescription": "Investor and startup tools",
-    "longDescription": "Browse the startups raising on Wefunder that you can see, read a company's page and round terms as data, and, if you run a company or syndicate on Wefunder, read your investor and member data. Read by default: this connection can never invest, reserve, or move money. With permissions you grant explicitly it can follow companies for you and read your own portfolio. Wefunder does not give investment advice or recommendations.",
+    "longDescription": "Browse the startups raising on Wefunder that you can see, read a company's page and round terms as data, and, if you run a company or syndicate on Wefunder, read your investor and member data. Read by default: this connection can never invest, reserve, or move money. With permissions you grant explicitly it can follow companies for you, read your own portfolio and its totals, and, for a company you run, read your investors' contact details. Wefunder does not give investment advice or recommendations.",
     "developerName": "Wefunder Inc.",
     "category": "Finance",
     "capabilities": [
@@ -32,6 +32,7 @@
     "termsOfServiceURL": "https://wefunder.com/terms",
     "defaultPrompt": [
       "Show Wefunder offerings with a minimum of $500 or less.",
+      "What's my overall return on Wefunder?",
       "Summarize my company's fundraising dashboard.",
       "Show my syndicate's deals and recent activity."
     ],
