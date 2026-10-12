@@ -29,8 +29,9 @@ Built against server **0.11.0**.
   say legal name is withheld. `list_members` says what managers see.
 - `follow_company` is no longer marked destructive: following sets a
   "Not interested" dismissal aside and unfollowing puts it back.
-- Starter prompts are now three (the ChatGPT portal's limit): offerings, overall
-  return, company dashboard. `supportURL` (help.wefunder.com) added to the
+- Starter prompts are now three (the ChatGPT portal's limit): a weekly monitor
+  for new startups matching the user's interests, researching a company as a
+  potential investment, and the founder's fundraising dashboard. `supportURL` (help.wefunder.com) added to the
   OpenAI metadata; the portal requires all four listing URLs.
 
 ## 1.0.1 — 2026-10-02
