@@ -15,14 +15,14 @@ The server is live at `https://wefunder.com/mcp/server`; this package is how the
 | `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` | Claude Code plugin + marketplace (generated manifest) |
 | `.cursor-plugin/plugin.json` | Cursor / Grok Bot marketplace listing (generated; includes logo) |
 | `.agents/plugins/marketplace.json` | Codex / ChatGPT marketplace index pointing at this repo root |
-| `skills/` | Four skills that teach an agent how to use the tools well: `browse-deals`, `company-research-and-watchlist`, `founder-investor-insights`, `syndicate-manager` |
+| `skills/` | Five skills that teach an agent how to use the tools well: `browse-deals`, `company-research-and-watchlist`, `my-portfolio`, `founder-investor-insights`, `syndicate-manager` |
 | `assets/` | Logo and icon for directory listings |
 
 Edit `plugin.json` or `mcp.json`, then run `python3 bin/build-manifests`; CI fails if the generated copies are stale.
 
 ## Install
 
-Every route ends on the same Wefunder sign-in page where you choose permissions. The only required one is **Browse Wefunder as you**, which is read-only. Two more are optional. **Follow companies for you** is selected when you first connect, so clear it if you want browse-only access (it is preselected because ChatGPT asks again, every session, for any permission you left unticked the first time). **Read your investments** (your own portfolio) starts unchecked. A reconnect or a permission prompt from the agent can also arrive with boxes preselected to match what the connection already holds or just asked for. You can turn permissions on later or take them away at [wefunder.com/settings/apps](https://wefunder.com/settings/apps), and disconnect there any time.
+Every route ends on the same Wefunder sign-in page where you choose permissions. The only required one is **Browse Wefunder as you**, which is read-only. Three more are optional. **Follow companies for you** is selected when you first connect, so clear it if you want browse-only access (it is preselected because ChatGPT asks again, every session, for any permission you left unticked the first time). **Read your investments** (your own portfolio and its totals) and **View your investors' contact details** (for founders: the legal name and email of investors in a company you run) start unchecked. A reconnect or a permission prompt from the agent can also arrive with boxes preselected to match what the connection already holds or just asked for. You can turn permissions on later or take them away at [wefunder.com/settings/apps](https://wefunder.com/settings/apps), and disconnect there any time.
 
 ### ChatGPT
 

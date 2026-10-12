@@ -7,6 +7,30 @@ its own version, reported on every connection; each entry names the server
 version it was written against. Server changes reach every connected agent
 when they deploy, whatever version a directory shows.
 
+## 1.1.0 — 2026-10-12
+
+Built against server **0.11.0**.
+
+- New skill **my-portfolio**: `get_my_portfolio` answers "what's my return"
+  in one call (totals in one currency, with other currencies listed apart),
+  and `list_my_investments` gives the positions behind it. Both need the
+  optional **Read your investments** permission; the skill relays the
+  permission request and never sums across currencies or advises.
+- New permission for founders, unchecked until you tick it: **View your
+  investors' contact details**. With it, `list_company_investor_contacts`
+  returns the legal name and email of investors in a company you run, and
+  nothing else; the listing and search tools still never return contact
+  details. The founder skill says when to use it and when not to.
+- The founder skill no longer refers to `find_investor_connections`, which
+  the server withholds from MCP connections while its data source is under
+  review (it was never the investor's own profile data).
+- The listing tools now return the name on each investment (legal name) to
+  the founder or manager, as the web directory does; the skills no longer
+  say legal name is withheld. `list_members` says what managers see.
+- `follow_company` is no longer marked destructive: following sets a
+  "Not interested" dismissal aside and unfollowing puts it back.
+- New starter prompt: "What's my overall return on Wefunder?"
+
 ## 1.0.1 — 2026-10-02
 
 Built against server **0.4.0**.
