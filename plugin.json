@@ -30,13 +30,13 @@
           "Interactive"
         ],
         "websiteURL": "https://wefunder.com",
+        "supportURL": "https://help.wefunder.com",
         "privacyPolicyURL": "https://wefunder.com/terms#privacy",
         "termsOfServiceURL": "https://wefunder.com/terms",
         "defaultPrompt": [
-          "Show Wefunder offerings with a minimum of $500 or less.",
-          "What's my overall return on Wefunder?",
-          "Summarize my company's fundraising dashboard.",
-          "Show my syndicate's deals and recent activity."
+          "Create a weekly monitor for new Wefunder startups that match my interests.",
+          "Help me research a company on Wefunder as a potential investment.",
+          "Summarize my company's fundraising dashboard."
         ],
         "brandColor": "#2E58FF",
         "composerIcon": "./assets/icon.png",
